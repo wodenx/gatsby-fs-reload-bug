@@ -51,3 +51,32 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+export const defaultQuery = graphql`
+  fragment PageQuery on Query {
+    Page: allRawCode(filter: { fields: { slug: { eq: $slug } } }) {
+      edges {
+        node {
+          name
+          content
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+  fragment SiteQuery on Query {
+    Site: allRawCode(filter: { fields: { slug: { eq: "../site/" } } }) {
+      edges {
+        node {
+          name
+          content
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
