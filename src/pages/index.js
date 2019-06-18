@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <h1>Page 2</h1>
+    <h1>Home Page</h1>
     <p>Contents of data prop</p>
     <pre>
       {JSON.stringify(data, null, 2)}
