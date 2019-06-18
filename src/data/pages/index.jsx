@@ -14,10 +14,18 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
-
 export const query = graphql`
   query($slug: String!) {
-    ...PageQuery
-    ...SiteQuery
+    allRawCode(filter: { fields: { slug: { eq: $slug } } }) {
+      edges {
+        node {
+          name
+          content
+          fields {
+            slug
+          }
+        }
+      }
+    }
   }
 `;

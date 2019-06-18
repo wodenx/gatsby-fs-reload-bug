@@ -8,28 +8,6 @@ const pathUtil = require('path');
 const slash = require('slash');
 const fs = require('fs');
 
-// exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
-// exports.onCreateBabelConfig = args => {
-//   const {
-//     actions: { setBabelPlugin },
-//   } = args;
-//   setBabelPlugin({
-//     name: '@babel/plugin-proposal-decorators',
-//     options: { legacy: true },
-//   });
-//   setBabelPlugin({
-//     name: '@babel/plugin-proposal-class-properties',
-//     options: { loose: true },
-//   });
-//   setBabelPlugin({
-//     name: 'babel-plugin-tailwind-components',
-//     options: {
-//       config: './tailwind.config.js',
-//       format: 'auto',
-//     },
-//   });
-// };
-
 const findFilesystemNode = ({ node, getNode }) => {
   // Find the filesystem node.
   const types = ['File', 'Directory'];
