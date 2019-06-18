@@ -20,9 +20,6 @@ export const query = graphql`
         node {
           name
           content
-          fields {
-            slug
-          }
         }
       }
     }

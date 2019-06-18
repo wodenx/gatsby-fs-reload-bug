@@ -15,14 +15,11 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 export const query = graphql`
   query {
-    allRawCode(filter: { fields: { slug: { eq: "/" } } }) {
+    allRawCode {
       edges {
         node {
           name
           content
-          fields {
-            slug
-          }
         }
       }
     }
