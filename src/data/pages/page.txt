@@ -1,0 +1,5 @@
+Edit data in this file.
+Changes will be reflected on both homepage and /page-2.
+Reload homepage, changes are preserved
+Reload /page-2, changes are lost.
+

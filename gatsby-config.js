@@ -1,18 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby 2.9 FS Data Refresh Issue`,
+    description: `Illustrates a problem in Gatsby 2.9`,
+    author: 'coden@its.jnj.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-transformer-code',
-      options: {
-        name: 'data',
-        extensions: ['json'],
-      },
-    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

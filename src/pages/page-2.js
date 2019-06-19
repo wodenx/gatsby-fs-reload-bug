@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby';
 
 import Layout from "../components/layout"
 
@@ -15,12 +16,11 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 export const query = graphql`
   query {
-    allRawCode {
-      edges {
-        node {
-          name
-          content
-        }
+    allFile {
+      nodes {
+        name
+        size
+        changeTime
       }
     }
   }
